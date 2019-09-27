@@ -1,0 +1,57 @@
+Router 1
+
+conf t
+
+int f0/0
+ip address 200.1.1.1 255.255.255.0
+ipv6 address 2001:A:1::1/64
+no shut
+
+int f0/1
+ip address 192.10.10.1 255.255.255.0
+ipv6 address 2001:10:10::1/64
+no shut
+
+end
+write
+
+#########################################
+Router 2
+
+conf t
+
+int f0/0
+ip address 200.1.1.2 255.255.255.0
+ipv6 address 2001:A:1::2/64
+no shut
+
+int f0/1
+ip address 192.30.30.2 255.255.255.0
+ipv6 address 2001:30:30::2/64
+no shut
+
+int f1/0
+ip address 192.20.20.2 255.255.255.0
+ipv6 address 2001:20:20::2/64
+no shut
+
+end
+write
+
+#########################################
+Router 3
+
+conf t
+
+int f0/0
+ip address 192.30.30.3 255.255.255.0
+ipv6 address 2001:30:30::3/64
+no shut
+
+int f0/1
+ip address 192.30.31.3 255.255.255.0
+ipv6 address 2001:30:31::3/64
+no shut
+
+end
+write
