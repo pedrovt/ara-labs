@@ -1,0 +1,149 @@
+Router 1
+
+conf t
+
+router ospf 1
+router ospf 2
+router ospf 10
+
+# Transport Network
+int f0/0
+ip address 200.1.1.1 255.255.255.0
+ip ospf 1 area 0
+no shut
+
+int f0/1
+ip address 192.168.1.1 255.255.255.0
+ip ospf 2 area 0
+no shut
+
+int Loopback0
+ip address 200.0.0.1 255.255.255.255
+ip ospf 1 area 0
+
+# Overlay network
+int Tunnel10
+ip address 10.1.1.1 255.255.255.0
+# overlay network ID
+ip nhrp network-id 1 
+tunnel source Loopback0
+tunnel mode gre multipoint
+# NRHP process. Can have more than 1 but usually not used 
+tunnel key 1		 
+ip ospf 10 area 0
+ip ospf 2 area 0
+
+ip nhrp map multicast dynamic
+ip ospf network broadcast
+ip ospf priority 2
+
+end
+write
+
+
+#####################################################
+Router 2
+
+conf t
+
+router ospf 1
+router ospf 2
+router ospf 10
+
+int f0/1
+ip address 192.168.2.2 255.255.255.0
+ip ospf 2 area 0
+no shut
+
+int f0/0
+ip address 200.2.2.2 255.255.255.0
+ip ospf 1 area 0
+no shut
+
+int Loopback0
+ip address 200.0.0.2 255.255.255.255
+ip ospf 1 area 0
+
+int Tunnel10
+ip address 10.1.1.2 255.255.255.0
+ip nhrp network-id 1 
+ip nhrp nhs 10.1.1.1
+ip nhrp map 10.1.1.1 200.0.0.1
+tunnel source Loopback0
+tunnel mode gre multipoint
+tunnel key 1		  
+ip ospf 10 area 0
+ip ospf 2 area 0
+
+ip nhrp map multicast 200.0.0.1
+ip ospf network broadcast
+ip ospf priority 0
+
+end
+write
+
+#####################################################
+Router 3
+
+conf t
+
+router ospf 1
+router ospf 2
+router ospf 10
+
+int f0/1
+ip address 192.168.3.3 255.255.255.0
+ip ospf 2 area 0
+no shut
+
+int f0/0
+ip address 200.3.3.3 255.255.255.0
+ip ospf 1 area 0
+no shut
+
+int Loopback0
+ip address 200.0.0.3 255.255.255.255
+ip ospf 1 area 0
+
+int Tunnel10
+ip address 10.1.1.3 255.255.255.0
+ip nhrp network-id 1 
+ip nhrp nhs 10.1.1.1
+ip nhrp map 10.1.1.1 200.0.0.1
+tunnel source Loopback0
+tunnel mode gre multipoint
+tunnel key 1		
+ip ospf 10 area 0
+ip ospf 2 area 0
+
+ip nhrp map multicast 200.0.0.1
+ip ospf network broadcast
+ip ospf priority 0
+
+end
+write
+
+#####################################################
+Router A
+
+conf t
+
+router ospf 1
+
+int f0/1
+ip address 200.2.2.10 255.255.255.0
+ip ospf 1 area 0
+no shut
+
+int f0/0
+ip address 200.1.1.10 255.255.255.0
+ip ospf 1 area 0
+no shut
+
+int f1/0
+ip address 200.3.3.10 255.255.255.0
+ip ospf 1 area 0
+no shut
+
+end
+write
