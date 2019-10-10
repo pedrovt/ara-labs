@@ -1,0 +1,107 @@
+Oct 10 09:17:54.379 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 10 09:17:54.379 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 3222.
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex2\project-files\dynamips 
+Oct 10 09:17:54.867 GENERAL: working_dir=C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex2\project-files\dynamips
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex2\project-files\dynamips\8b2a4b36-13d3-495b-b9d2-bd4e76458f36 
+Oct 10 09:17:54.867 GENERAL: working_dir=C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex2\project-files\dynamips\8b2a4b36-13d3-495b-b9d2-bd4e76458f36
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm create RA 4 c7200 
+Oct 10 09:17:54.867 VM: VM RA created.
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm set_con_tcp_port RA 5003 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: c7200 get_mac_addr RA 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm slot_add_binding RA 0 0 C7200-IO-FE 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm set_disk0 RA 0 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm set_exec_area RA 64 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm set_idle_pc RA 0x63184bc8 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm set_ios RA C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: c7200 set_mac_addr RA ca04.3730.0000 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm set_nvram RA 512 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm set_ram RA 512 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm slot_remove_binding RA 0 0 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm slot_add_binding RA 0 0 C7200-IO-2FE 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:17:54.867 HYPERVISOR: exec_cmd: vm slot_add_binding RA 1 0 PA-2FE-TX 
+Oct 10 09:18:01.352 HYPERVISOR: exec_cmd: nio create_udp udp-d541ef89-e551-449a-a20e-602fbfebfc95 10002 127.0.0.1 10003 
+Oct 10 09:18:01.706 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA 0 0 udp-d541ef89-e551-449a-a20e-602fbfebfc95 
+Oct 10 09:18:01.706 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:18:01.775 HYPERVISOR: exec_cmd: nio create_udp udp-0aa2a835-18e6-4ab6-a482-6f79c6221994 10006 127.0.0.1 10007 
+Oct 10 09:18:01.775 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA 0 1 udp-0aa2a835-18e6-4ab6-a482-6f79c6221994 
+Oct 10 09:18:01.775 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:18:01.806 HYPERVISOR: exec_cmd: nio create_udp udp-85a96271-a934-492d-9dcd-6489cc40a352 10010 127.0.0.1 10011 
+Oct 10 09:18:01.806 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA 1 0 udp-85a96271-a934-492d-9dcd-6489cc40a352 
+Oct 10 09:18:01.806 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:18:03.061 HYPERVISOR: exec_cmd: nio create_udp udp-36c6b9c0-f122-42b0-8b52-1c2f86269568 10038 127.0.0.1 10039 
+Oct 10 09:18:03.061 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA 1 1 udp-36c6b9c0-f122-42b0-8b52-1c2f86269568 
+Oct 10 09:18:03.061 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:18:08.429 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 10 09:18:08.429 VM: VM Ghost created.
+Oct 10 09:18:08.429 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 10 09:18:08.429 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 10 09:18:08.429 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex2\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost' 
+Oct 10 09:18:08.429 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Oct 10 09:18:08.429 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 10 09:18:08.429 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Oct 10 09:18:08.429 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 10 09:18:08.461 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 10 09:18:08.630 VM: VM Ghost shutdown.
+Oct 10 09:18:08.630 VM: VM Ghost destroyed.
+Oct 10 09:18:08.646 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:18:08.646 HYPERVISOR: exec_cmd: vm set_config RA configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Oct 10 09:18:08.646 HYPERVISOR: exec_cmd: vm start RA 
+Oct 10 09:18:39.050 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 10 09:45:09.347 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 10 09:54:55.822 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:54:55.823 HYPERVISOR: exec_cmd: vm stop RA 
+Oct 10 09:54:56.020 VM: VM RA shutdown.
+Oct 10 09:54:56.021 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 10 09:54:56.236 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 10 09:54:56.238 VM: VM Ghost created.
+Oct 10 09:54:56.239 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 10 09:54:56.239 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 10 09:54:56.240 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex2\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost' 
+Oct 10 09:54:56.241 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Oct 10 09:54:56.242 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 10 09:54:56.242 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Oct 10 09:54:56.242 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 10 09:54:56.270 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 10 09:54:56.494 VM: VM Ghost shutdown.
+Oct 10 09:54:56.494 VM: VM Ghost destroyed.
+Oct 10 09:54:56.504 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:54:56.507 HYPERVISOR: exec_cmd: vm set_config RA configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Oct 10 09:54:56.507 HYPERVISOR: exec_cmd: vm start RA 
+Oct 10 09:59:30.138 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:59:30.138 HYPERVISOR: exec_cmd: vm stop RA 
+Oct 10 09:59:30.361 VM: VM RA shutdown.
+Oct 10 09:59:30.362 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 10 09:59:31.092 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 10 09:59:31.095 VM: VM Ghost created.
+Oct 10 09:59:31.128 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 10 09:59:31.128 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 10 09:59:31.129 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex2\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost' 
+Oct 10 09:59:31.129 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Oct 10 09:59:31.129 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 10 09:59:31.130 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Oct 10 09:59:31.130 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 10 09:59:31.158 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 10 09:59:31.374 VM: VM Ghost shutdown.
+Oct 10 09:59:31.374 VM: VM Ghost destroyed.
+Oct 10 09:59:31.388 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 09:59:31.391 HYPERVISOR: exec_cmd: vm set_config RA configs\i4_startup-config.cfg configs\i4_private-config.cfg 
+Oct 10 09:59:31.391 HYPERVISOR: exec_cmd: vm start RA 
+Oct 10 10:04:17.314 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 10:04:17.315 HYPERVISOR: exec_cmd: vm stop RA 
+Oct 10 10:04:17.531 VM: VM RA shutdown.
+Oct 10 10:04:17.542 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 10 10:05:10.284 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 10:05:10.285 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 10 10:05:10.545 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 10 10:05:10.545 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 10 10:05:10.548 HYPERVISOR: exec_cmd: vm delete RA 
+Oct 10 10:05:10.549 VM: VM RA destroyed.
+Oct 10 10:05:10.556 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 10 10:05:10.882 HYPERVISOR: Stopped.
+Oct 10 10:05:10.882 GENERAL: reset done.
