@@ -1,0 +1,15 @@
+BGP only
+-> Prefers the path with less AS
+-> If iBGP, administrative distance = 200
+   If eBGP, administrative distance = 20
+
+basically changes on BGP might mean different administrative distances, so BGP and OSPF can be chosen dynamically
+
+
+route maps filter idea:
+match ...
+deny
+match ...
+
+match all
+allw

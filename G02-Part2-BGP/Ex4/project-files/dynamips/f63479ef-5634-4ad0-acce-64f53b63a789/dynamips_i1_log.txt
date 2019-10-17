@@ -1,0 +1,36 @@
+Oct 12 19:46:46.828 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 12 19:46:46.829 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 1209.
+Oct 12 19:46:46.882 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 12 19:46:46.883 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex4\project-files\dynamips 
+Oct 12 19:46:46.905 GENERAL: working_dir=C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex4\project-files\dynamips
+Oct 12 19:46:46.906 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex4\project-files\dynamips\f63479ef-5634-4ad0-acce-64f53b63a789 
+Oct 12 19:46:46.906 GENERAL: working_dir=C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part2-BGP\Ex4\project-files\dynamips\f63479ef-5634-4ad0-acce-64f53b63a789
+Oct 12 19:46:46.907 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Oct 12 19:46:46.908 VM: VM R1 created.
+Oct 12 19:46:46.908 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5015 
+Oct 12 19:46:46.908 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Oct 12 19:46:46.909 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 19:46:46.909 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Oct 12 19:46:46.909 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Oct 12 19:46:46.910 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Oct 12 19:46:46.910 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 19:46:46.910 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x63184bc8 
+Oct 12 19:46:46.911 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 12 19:46:46.912 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.1ba4.0000 
+Oct 12 19:46:46.912 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Oct 12 19:46:46.913 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Oct 12 19:46:46.913 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 19:46:46.914 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+Oct 12 19:46:46.914 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 19:46:46.915 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+Oct 12 19:46:46.915 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 19:46:46.915 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Oct 12 19:46:55.388 HYPERVISOR: exec_cmd: nio create_udp udp-8f5162d0-91d0-4bcd-95cd-b9f96e63d6ad 10014 127.0.0.1 10015 
+Oct 12 19:46:55.625 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-8f5162d0-91d0-4bcd-95cd-b9f96e63d6ad 
+Oct 12 19:46:55.626 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 19:46:55.731 HYPERVISOR: exec_cmd: nio create_udp udp-a14510b6-4fa5-4fef-aadd-32a862551345 10018 127.0.0.1 10019 
+Oct 12 19:46:55.735 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-a14510b6-4fa5-4fef-aadd-32a862551345 
+Oct 12 19:46:55.736 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 19:46:56.810 HYPERVISOR: exec_cmd: nio create_udp udp-0e935d51-c514-4337-a1b5-8c169d217cb4 10050 127.0.0.1 10051 
+Oct 12 19:46:56.812 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-0e935d51-c514-4337-a1b5-8c169d217cb4 
+Oct 12 19:46:56.812 HYPERVISOR: exec_cmd: vm get_status R1 
