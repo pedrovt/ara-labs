@@ -1,0 +1,33 @@
+      192.2.0.0/32 is subnetted, 2 subnets
+O        192.2.0.1 [110/2] via 192.2.13.1, 00:12:30, FastEthernet0/0
+O        192.2.0.2 [110/2] via 192.2.23.2, 00:12:15, FastEthernet0/1
+O     192.2.12.0/24 [110/2] via 192.2.23.2, 00:12:15, FastEthernet0/1
+                    [110/2] via 192.2.13.1, 00:11:42, FastEthernet0/0
+      192.2.13.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.2.13.0/24 is directly connected, FastEthernet0/0
+L        192.2.13.3/32 is directly connected, FastEthernet0/0
+      192.2.23.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.2.23.0/24 is directly connected, FastEthernet0/1
+L        192.2.23.3/32 is directly connected, FastEthernet0/1
+O E2  192.3.1.0/24 [110/1] via 192.2.13.1, 00:12:30, FastEthernet0/0
+O E2  192.3.2.0/24 [110/1] via 192.2.13.1, 00:12:30, FastEthernet0/0
+
+
+
+vs 
+
+      192.1.1.0/25 is subnetted, 1 subnets
+O E2     192.1.1.128 [110/1] via 192.2.23.2, 00:00:07, FastEthernet0/1
+      192.2.0.0/32 is subnetted, 2 subnets
+O        192.2.0.1 [110/2] via 192.2.13.1, 00:20:36, FastEthernet0/0
+O        192.2.0.2 [110/2] via 192.2.23.2, 00:20:21, FastEthernet0/1
+O     192.2.12.0/24 [110/2] via 192.2.23.2, 00:20:21, FastEthernet0/1
+                    [110/2] via 192.2.13.1, 00:19:48, FastEthernet0/0
+      192.2.13.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.2.13.0/24 is directly connected, FastEthernet0/0
+L        192.2.13.3/32 is directly connected, FastEthernet0/0
+      192.2.23.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.2.23.0/24 is directly connected, FastEthernet0/1
+L        192.2.23.3/32 is directly connected, FastEthernet0/1
+O E2  192.3.1.0/24 [110/1] via 192.2.13.1, 00:00:20, FastEthernet0/0
+O E2  192.3.2.0/24 [110/1] via 192.2.13.1, 00:00:20, FastEthernet0/0
