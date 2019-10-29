@@ -1,0 +1,10 @@
+Oct 29 13:12:46.954 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 29 13:12:46.954 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 10432.
+Oct 29 13:12:47.064 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 29 13:12:47.064 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Documents\UA\ARA\ARA\G03-MPLS\Ex1\project-files\dynamips 
+Oct 29 13:12:47.084 GENERAL: working_dir=C:\Users\Pedro\Documents\UA\ARA\ARA\G03-MPLS\Ex1\project-files\dynamips
+Oct 29 13:12:47.084 HYPERVISOR: exec_cmd: ethsw create Ethernetswitch-1 
+Oct 29 13:12:49.648 HYPERVISOR: exec_cmd: ethsw delete Ethernetswitch-1 
+Oct 29 13:12:49.650 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 29 13:12:50.125 HYPERVISOR: Stopped.
+Oct 29 13:12:50.125 GENERAL: reset done.

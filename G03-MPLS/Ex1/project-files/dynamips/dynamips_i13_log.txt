@@ -1,0 +1,69 @@
+Oct 29 13:12:59.335 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 29 13:12:59.335 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 10722.
+Oct 29 13:12:59.818 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 29 13:12:59.819 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Documents\UA\ARA\ARA\G03-MPLS\Ex1\project-files\dynamips 
+Oct 29 13:12:59.820 GENERAL: working_dir=C:\Users\Pedro\Documents\UA\ARA\ARA\G03-MPLS\Ex1\project-files\dynamips
+Oct 29 13:12:59.820 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Documents\UA\ARA\ARA\G03-MPLS\Ex1\project-files\dynamips\451b3eca-8286-4df2-892d-d237f268e164 
+Oct 29 13:12:59.822 GENERAL: working_dir=C:\Users\Pedro\Documents\UA\ARA\ARA\G03-MPLS\Ex1\project-files\dynamips\451b3eca-8286-4df2-892d-d237f268e164
+Oct 29 13:12:59.824 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Oct 29 13:12:59.829 VM: VM R3 created.
+Oct 29 13:12:59.831 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5011 
+Oct 29 13:12:59.832 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Oct 29 13:12:59.834 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 29 13:12:59.836 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Oct 29 13:12:59.839 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Oct 29 13:12:59.842 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+Oct 29 13:12:59.844 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 29 13:12:59.845 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x63184bc8 
+Oct 29 13:12:59.848 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 29 13:12:59.850 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Oct 29 13:12:59.852 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Oct 29 13:12:59.855 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 29 13:12:59.896 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Oct 29 13:12:59.978 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 29 13:13:00.014 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Oct 29 13:13:00.016 HYPERVISOR: exec_cmd: vm get_status R3 
+Oct 29 13:13:00.016 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Oct 29 13:13:00.164 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 29 13:13:08.740 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 29 13:13:15.286 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 29 13:13:15.291 HYPERVISOR: exec_cmd: vm rename R3 RA 
+Oct 29 13:13:15.375 HYPERVISOR: exec_cmd: vm set_ios RA C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 29 13:13:15.461 HYPERVISOR: exec_cmd: vm set_ios RA C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 29 13:13:27.547 HYPERVISOR: exec_cmd: vm set_ios RA C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 29 13:13:29.477 HYPERVISOR: exec_cmd: vm set_ios RA C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 29 13:13:32.146 HYPERVISOR: exec_cmd: vm set_ios RA C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 29 13:15:00.717 HYPERVISOR: exec_cmd: nio create_udp udp-cf22f917-328c-47d2-aff5-56481ad93434 10002 127.0.0.1 10003 
+Oct 29 13:15:01.070 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA 0 0 udp-cf22f917-328c-47d2-aff5-56481ad93434 
+Oct 29 13:15:01.071 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 29 13:15:04.883 HYPERVISOR: exec_cmd: nio create_udp udp-b1c7e0db-20c2-4c29-8ceb-adc15df3a6da 10006 127.0.0.1 10007 
+Oct 29 13:15:04.893 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA 0 1 udp-b1c7e0db-20c2-4c29-8ceb-adc15df3a6da 
+Oct 29 13:15:04.893 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 29 13:15:08.492 HYPERVISOR: exec_cmd: nio create_udp udp-5fc7c4cd-5e22-425b-bb5a-8191013693b8 10010 127.0.0.1 10011 
+Oct 29 13:15:08.495 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA 1 0 udp-5fc7c4cd-5e22-425b-bb5a-8191013693b8 
+Oct 29 13:15:08.496 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 29 13:15:11.559 HYPERVISOR: exec_cmd: nio create_udp udp-9ae58c4f-4d0c-4587-82fb-b7fe5b5bd8c1 10014 127.0.0.1 10015 
+Oct 29 13:15:11.562 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RA 1 1 udp-9ae58c4f-4d0c-4587-82fb-b7fe5b5bd8c1 
+Oct 29 13:15:11.562 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 29 13:24:04.936 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 29 13:24:04.943 VM: VM Ghost created.
+Oct 29 13:24:04.945 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Pedro/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Oct 29 13:24:04.946 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 29 13:24:04.947 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Pedro\Documents\UA\ARA\ARA\G03-MPLS\Ex1\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost' 
+Oct 29 13:24:04.949 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Oct 29 13:24:04.950 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 29 13:24:04.953 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Oct 29 13:24:04.953 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 29 13:24:05.042 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 29 13:24:05.230 VM: VM Ghost shutdown.
+Oct 29 13:24:05.230 VM: VM Ghost destroyed.
+Oct 29 13:24:05.249 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 29 13:24:05.259 HYPERVISOR: exec_cmd: vm set_config RA configs\i3_startup-config.cfg 
+Oct 29 13:24:05.259 HYPERVISOR: exec_cmd: vm start RA 
+Oct 29 13:24:35.679 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 29 13:29:35.719 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 29 13:30:05.725 HYPERVISOR: exec_cmd: vm extract_config RA 
+Oct 29 13:39:17.019 HYPERVISOR: exec_cmd: vm get_status RA 
+Oct 29 13:39:17.019 HYPERVISOR: exec_cmd: vm stop RA 
+Oct 29 13:39:17.231 VM: VM RA shutdown.
+Oct 29 13:39:17.236 HYPERVISOR: exec_cmd: vm extract_config RA 
