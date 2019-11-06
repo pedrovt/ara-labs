@@ -1,0 +1,9 @@
+Oct 31 09:11:24.832 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 31 09:11:24.832 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 31158.
+Oct 31 09:11:25.285 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 31 09:11:25.285 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Documents\UA\ARA\ARA\G03-MPLS\Ex1\project-files\dynamips 
+Oct 31 09:11:25.285 GENERAL: working_dir=C:\Users\Pedro\Documents\UA\ARA\ARA\G03-MPLS\Ex1\project-files\dynamips
+Oct 31 09:11:25.285 HYPERVISOR: exec_cmd: ethsw create 192.3.1.0 
+Oct 31 09:11:31.583 HYPERVISOR: exec_cmd: nio create_udp udp-27ea7aa7-d922-4928-8768-def22ed464d1 10000 127.0.0.1 10001 
+Oct 31 09:11:31.584 HYPERVISOR: exec_cmd: ethsw add_nio 192.3.1.0 udp-27ea7aa7-d922-4928-8768-def22ed464d1 
+Oct 31 09:11:31.595 HYPERVISOR: exec_cmd: ethsw set_access_port 192.3.1.0 udp-27ea7aa7-d922-4928-8768-def22ed464d1 1 

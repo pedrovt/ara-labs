@@ -1,0 +1,13 @@
+Oct 30 19:56:55.818 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 30 19:56:55.821 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 14358.
+Oct 30 19:56:56.229 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 30 19:56:56.231 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part1b-BGP\project-files\dynamips 
+Oct 30 19:56:56.231 GENERAL: working_dir=C:\Users\Pedro\Documents\UA\ARA\ARA\G02-Part1b-BGP\project-files\dynamips
+Oct 30 19:56:56.231 HYPERVISOR: exec_cmd: ethsw create Ethernetswitch-1 
+Oct 30 19:56:59.292 HYPERVISOR: exec_cmd: nio create_udp udp-3274f135-1e22-4723-a210-512b243367b5 10000 127.0.0.1 10001 
+Oct 30 19:56:59.298 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-3274f135-1e22-4723-a210-512b243367b5 
+Oct 30 19:56:59.310 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-1 udp-3274f135-1e22-4723-a210-512b243367b5 1 
+Oct 30 19:57:34.229 HYPERVISOR: exec_cmd: ethsw delete Ethernetswitch-1 
+Oct 30 19:57:34.250 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 30 19:57:34.668 HYPERVISOR: Stopped.
+Oct 30 19:57:34.669 GENERAL: reset done.

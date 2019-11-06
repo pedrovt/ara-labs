@@ -690,11 +690,11 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "Ethernetswitch-4",
-                    "x": -25,
+                    "text": "200.1.2.0",
+                    "x": 1,
                     "y": -25
                 },
-                "name": "Ethernetswitch-4",
+                "name": "200.1.2.0",
                 "node_id": "331f273d-35db-4685-99d4-fdc5adc699e2",
                 "node_type": "ethernet_switch",
                 "port_name_format": "Ethernet{0}",
@@ -1398,5 +1398,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.1.21",
-    "zoom": 141
+    "zoom": 70
 }

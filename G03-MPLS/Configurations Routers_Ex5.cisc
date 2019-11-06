@@ -27,6 +27,31 @@ no shut
 end
 write
 
+conf t
+ip cef
+mpls ip
+
+int range f0/0-1
+mpls ip
+
+int range f1/0-1
+mpls ip
+
+end
+write
+
+conf t
+ip cef
+no mpls ip
+
+int range f0/0-1
+no mpls ip
+
+int range f1/0-1
+no mpls ip
+
+end
+write
 
 ================================================================
 Router 2
